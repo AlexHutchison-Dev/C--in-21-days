@@ -1,0 +1,28 @@
+Chapter 2 Quiz
+
+1: What is the difference between the preprocessor and the compiler?
+
+    The preprocessor runs first and reads all lines beggining with "#", inserting the code in the file named between "< >" as if
+    it were written there in your code. The compiler takes the preprocessed code and turns it into object code.
+
+2: Why is the function main() special?
+
+    main() is a special function because it is required, it is also the entry point for your program, and is called everytime your program starts. It may not be called.
+
+3: What are the two types of comments, and how do they differ?
+
+    star-slash comments, sometimes referred to as C comments or multi-line comments can be either single or multiline and comment out all 
+    text between the opening /* and the closing */.
+
+    slash-slash comments sometimes refered to as C++ comments as they were introduced as part of C++. These comments are preceeded by "//"
+    and comment all text to the end of the line.
+
+    Despite there name's tying each to either C or C++, both comments have been added to the standards for both languages.
+
+4: Can comments be nested?
+
+    Yes.
+
+5: Can comments be longer than one line?
+
+    Yes */ comments can be longer than one line, // comments cannot, without adding another // on each new line of the comment.

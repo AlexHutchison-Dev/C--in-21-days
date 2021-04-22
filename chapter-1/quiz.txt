@@ -1,0 +1,30 @@
+Quiz
+
+1: What is the difference between an interpreter and a compiler?
+
+    An interpreter reads each line, converts it to a machine executable form, then runs it before moving on to the next line. 
+    A compiler reads a sorce code file and converts it into an object file, in preperation for the linker to combine any linked libaries
+    and produce an executable, to run later.
+
+2: How do you compile the source code with your compiler?
+    I enter the command "clang++ <filename>", then ./a.out to run the compiled program.
+
+3. What does the linker do?
+    The linker takes the object file that the compiler outputted and combine any libaries linked with the "#include' statement, making an
+    executable file.
+
+4. What are the steps of the Development Cycle?
+    write code
+    compile 
+    if 
+        errors return to step 1 and fix errors
+    else 
+        pass object file to linker
+    if 
+        errors return to step 1 and fix errors
+    else 
+        run executable
+    if 
+        errors return to step 1 and fix errors
+    else  
+        complete
