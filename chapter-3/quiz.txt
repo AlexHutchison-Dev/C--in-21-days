@@ -1,0 +1,42 @@
+Chapter 3 Quiz
+
+1: What is the difference between an interger and a floating point variable?
+
+    An interger is a whole number, a floating point variable can store a decimal fraction or real number.
+
+2: What is the difference unsigned short int, int and long int?
+
+    An unsigned short int is able to store a positive number between 0 and 65,357 in 2bytes on most machines.
+    An int can vary in size, depending on your computer, my computer uses a 4 byte or 32-bit int that can store numbers between approximately -4.5 Billion and 4.5 Billion.  
+    A long int is an 8 byte int or 64 bit that can store values between approx -9 quintillioon and 9 quintillion.
+
+3: What are the advantages of using Symbolic constants over literal constants?
+
+    A symbolic constant has two main advantages over a literal constant, these being that if the value is used in more than one place in your code, 
+    you can change it once and update the value everywhere that it is used, and that the fact that it is named like a variable can improve the readability of your code.
+
+4: What is the advantage of using the const keyword over #define to declare and instantiate constants?
+
+    When using the const keyword you can assign a type to the variable allowing the compiler to enforce type, where as with #define the preprocessor simply substutes the 
+    name for what ever value is asigned.  #define is no longer part of the C++ standards.
+
+5: What makes for a good or bad variable name?
+
+    A variable name should say what the data stored is, for example age, name, gender would be good variable names. Arbitary letters and numbers should be avoided out side 
+    loop counters. It is important to be consistent with how you capitalise mulit-word variable names, i prefer camel case so maxAge, firstName but max_age would also be fine.
+
+6: Given this enum, what is the value of blue?
+    enum COLOR { White, Black=100, Red, Blue, Green=300 };
+
+    BLue = 102;
+
+7: Which of the following are good, bad or invalid variable names?
+
+    A: Age - Good
+    B: !ex - Invalid
+    C: R79J - Bad
+    D: TotalIncome - Good
+    E: __Invalid: - Bad
+
+
+
