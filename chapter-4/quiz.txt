@@ -1,0 +1,20 @@
+Chapter 4 Quiz
+
+1: What are the first and last elements in someArray[25]?
+
+    The first element is someArray[0], and the last is someArray[24];
+
+2: How do you declare a multidimensional array?
+
+    You declare a multidimensional array in much the same way you declare any array but add [n] for each dimension. So a 2 dimensional array declaration
+    would look like 2dArray[n][m];
+
+3: Initialze all members of on array declared someArray[2][3][2]?
+
+    someArray[2][3][2] {0};
+
+4: How man characters are stored in the string "Jesse knows C++"?
+    16, the 15 ins the text plus the null character.
+
+5: What is the last character in the string "Brad is a nice guy"?
+    THe null character.
