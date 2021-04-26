@@ -1,0 +1,44 @@
+Chapter 5 quiz
+
+1: What is an expression?
+
+    An expression is any statement that returns a value. It is an l-value or an r value.
+
+2: Is x = 5 + 7 an expression? What is its value?
+
+    This is an expression and its value is 12.
+
+3:  What is the value of 201/4?
+
+    50
+
+4: What is the value of 201%4?
+
+    1
+
+5: If myAge, a, and b are all intergers what is their value after 
+    myAge = 39;
+    a = myAge++;
+    b = ++myAge;
+
+    myAge: 41, a: 39, b: 41
+
+6: What is the value of 8+2*3?
+    
+    14
+
+7: What is the difference between if(x = 3) and if(x == 3)?
+
+    The first assigns the value of 3 to x, returning 3 which evalutes as true.  The seccond checks if the value of x 
+    is equal to 3 returning true if this is the case ,false if not.
+
+8: Do the folowing evaluate to true or false?
+
+    A. 0 : false
+    B. 1 : true
+    C. -1 : true
+    D. x = 0 : false
+    E. x == 0 : true        // Assume x has the value of 0
+
+
+
