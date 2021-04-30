@@ -1,0 +1,36 @@
+// Chapter 6 Quiz
+
+1: What are the difference between the function prototype and the function definition?
+
+    The function prototype declares a function the definiton defines it. The protype ends with a semicolon; the definition need not.
+    The declaration can contain default values for paramaters, the definition cannot. 
+
+    A function prototype does not require names for the paramaters just types, but a function definition requires both.
+
+2: Do the names of paramaters have to agree in prototype definition and call to the function?
+
+    No. However it helps code readability but ultimately the paramaters are identifies by order, not name.
+
+3: If a function doesnt return a value, how do you declare the function?
+    void functionName(paramaters)
+
+4: If you dont declare a return type, what type of return value is assumed?
+    int
+
+5: What is local scope?
+    Local scope is all variables declared within or passed to a block. It may only be accessed from within that block.
+
+6:  What is scope?
+    Scope is the visibility and and lifespan of local and global variables.
+
+7: What is recursion?
+    Recursion is the process by which a function moves towards a solution by calling its-self repeatedly.
+
+8:  When should you use Global Variables.
+    As sparingly as possible, but when many functions need access to the same data. A variable should have 
+    as small a scope as possible to make it easier to track down the instigator of changes 
+
+9:  What is function overlading?
+    Function overlading is when you declare multiple functions with the same name, these functions can have different return types or
+    paramater types, or both but must have different paramater types.  When a function by this name is called the version whose paramaters
+    match the arguments is the one executed.
