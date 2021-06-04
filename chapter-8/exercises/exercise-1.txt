@@ -1,0 +1,13 @@
+// Exercise 1
+
+1. What do these declarations do?
+
+	a. int * pOne; 
+		creates a pointer to an int.
+
+	b. int vTwo;
+		creates an interger called vTwo.
+
+	c. int * pThree = &vTwo;
+		creates a pointer called pTHree that points to the int vTwo.
+

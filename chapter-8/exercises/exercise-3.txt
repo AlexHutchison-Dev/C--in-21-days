@@ -1,0 +1,9 @@
+// Exercise 3
+
+3. Assign the value 50 to the variable yourAge by using the pointer you declared in exercise 2.
+
+	unsigned short *pPointer = &yourAge;
+
+	*pPointer = 50;
+
+

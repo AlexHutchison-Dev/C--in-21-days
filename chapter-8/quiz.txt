@@ -1,0 +1,54 @@
+// Chapter 8 Quiz
+
+1. What operator is used to determine the address of a variable?
+
+	The address-of (&) operator gets the address of a variable e.g. pPointer = &a would set pPointer to the memory address of the variable a.
+
+2. What operator is used to find the value stored at an address held in a pointer?
+
+	* The dereferencing operator will find the value stored at the address in a pointer. e.g. *pPointer will return the value at the memory address stored in the pointer pPointer.
+
+3. What is a Pointer?
+
+	A pointer is a variable that stores the  memory address of another variable 
+
+4. What is the difference berweem the address stored in a pointer and the value at that pointer?
+
+	The address is a 64bit(nowadays was once 32bit)  hexidecimal number that references a location in the computers memory. Imagine it to be the number of your P.O Box and your mail to be the value stored at that address.
+
+5. What is the difference between the indirection and address-of operators?
+
+	The indirecrion operator or dereference operator (*) retrieves a value when the pointer is derefenced. e.g. *pPointer might return 10 cout << pPointer; would print the memory address stored in pPointer;
+
+	The address-of (&) returns the address at which a variables value is stored as opposed to the value its self.  
+
+
+6. What is the difference between const int * ptrOne and int * const ptrTwo?
+
+	option 1 is an interger that is constant(cannot be changed) referenced by a pointer.
+
+	option 2 is an interger referenced by a pointer that is constant and therefore may not point anwhere else in memory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

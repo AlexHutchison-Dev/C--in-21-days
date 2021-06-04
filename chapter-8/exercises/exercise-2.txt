@@ -1,0 +1,6 @@
+// Exercise 2
+
+2. If you have an unsigned short variable named yourAge, how do you declare a pointer to manipulate yourAge?
+
+	unsigned short * pPointer = &yourAge;
+ 
