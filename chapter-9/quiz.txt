@@ -1,0 +1,29 @@
+// Chapter 9 Quiz
+
+1. What is the difference between a reference and a pointer?
+
+    A reference is an alias of a variable, it must be initialized is constant
+    and cannot be null.
+
+    A pointer is data type that stores a memory address, a value can be retrieved
+    from that address using the dereferencing operator (*).
+
+2. When must you use a pointer instead of a reference?
+
+    When you need to point to multiple different objects or when you need to 
+    free the memory eventualy.
+
+3. What does new return if there is insufficient memory to make your new object?
+
+    null
+
+4. What is a constant Reference?
+
+    a constant reference is a reference to an object that my itself not be constant
+    but when accessed from this refereence will be treated as such.
+
+5. What is the difference between passing by reference and passing a reference?
+
+    passing by reference is when you pass asd object in the function call and
+    the fact that the functoin declaration has it defined as a reference means
+    that the 

@@ -1,0 +1,17 @@
+Notes on chapter 9.
+
+I am puzzleing over the differences between references and pointers.  as of know I have this,
+
+    
+  a reference is an alias it merely acts as another name for a preexisting 
+  variable, as oposed to a copy like you would get if you declared and 
+  initialized int a = b; . 
+  A reference is constant (cannot be changed) and also cannot be null.
+
+
+    a pointer is simply a primitive data type that stores a memory address, 
+    this can be the memory address of a previously declared variable.  When 
+    reading its value it will return a hexadecimal memory address unless 
+    dereferenced using the dereferencing operator (*) when it will return the 
+   value stored at the memory address it holds. 
+
