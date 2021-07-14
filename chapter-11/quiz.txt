@@ -1,0 +1,42 @@
+Chapter 11 Quiz
+
+1) What is a vtable?
+
+    A v-table is created by the compiler to keep track of all virtual functions by storing ponters,
+    then when called it provides the right version based on the type of the calling object.
+
+2)  What is a virtual destructor?
+
+    A destructor of any class can be declared virtual. When the pointer is deleted the runtime 
+    type of the object will be assesed and the correct derived destructor invoked.
+
+3) How do show the declaration of a virtual constructor?
+    
+    No virtual constructors.
+
+4) How can you create a virtual copy constructor?
+
+    By creating a virtual method in your class that itsself calls the copy constructor. e.g.
+        virtual <BaseClass>*  Clone() { return new <BaseClass>(&this); }
+
+5) How do you invoke a base class member function from a derived class in which you hace overriden that
+function?
+
+    You can call the base class member function like this:
+            BaseClass::MemberFunction();
+
+6) How do uou invoke a base member function from a derived class in which you have not overridden 
+    that function?
+
+    You can simply call the function as if you were in that class as it is inherited, assuming that
+    the function is a public or a protected and not a private member of the base class.
+
+7) If a base class declares a function to be virtual and a derived class does not use the term virtual
+when overriding that class, is it still virtual when inherited by a third generation class?
+
+    Yes the virtual keyword will be inheritied and cannot be turned off.
+
+8) What is the protected keyword used for?
+
+    the protected keyword is used to restrict access to member functions of derived classes but
+    deny access to the client.
