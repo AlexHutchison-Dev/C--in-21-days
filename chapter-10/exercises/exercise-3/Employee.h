@@ -1,0 +1,20 @@
+// Employee header file
+
+
+class Employee 
+{
+    public:
+        int GetAge() const { return itsAge; }
+        int GetYearsOfService() const { return itsYearsOfService; }
+        float GetSalary() const { return itsSalary; }
+
+        void SetAge( int age );
+        void SetYearsOfService(int years);
+        void SetSalary ( float salary );
+    
+    private:
+        int itsAge;
+        int itsYearsOfService;
+        float itsSalary;
+};
+

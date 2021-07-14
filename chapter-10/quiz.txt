@@ -1,0 +1,44 @@
+Chapter 10 Quiz
+
+1) What is the dot opperator and what is it used for?
+
+    The dot operator (.) is used for accessing the members of an object. These maybe member data  or
+    methods (member functions) of that object.
+
+2) Whivh sets aside the memory - a declaration or a definition?
+
+    a definition sets aside the memory.
+
+3) Is the declaration of a class its interface or its implementation?
+    
+    interface. The implementation is the definition of member functions normally found in an 
+    accompanying .cpp file.
+
+4)What is the difference between public and private data members?
+
+    public data members may be accessed by clients, private may only be accessed
+    from member functions.
+
+5) Can member functions (methods) be private?
+    yes
+
+6) Can member data be public?
+
+    yes. But should be private and accessed through accessor functions called getters and setters.
+
+7) If you declare two Cat Objects, can they have different values int their itsAge member data?
+    yes, these would be 2 seperate instances of the Cat class, it would be much like 2 different int
+    variables.
+
+8) Do class declarations end with a semicolon? Do class method definitions?
+
+    class declarations: yes 
+    method definitions: no
+
+9) What would the header for a Cat function Meow that takes no paramaters and returns void;
+
+    void Cat::Meow();
+
+10) What function is called to initialize a class?
+    
+    a constructor class is called to initialize a class.
