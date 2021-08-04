@@ -1,0 +1,7 @@
+Chapter 12
+
+Exercise 1
+
+Show the declaration for aclass JetPlane that inherits from both Rocket asn Airplane.
+
+class JetPlane : public Rocket, public Airplane

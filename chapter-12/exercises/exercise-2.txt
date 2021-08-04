@@ -1,0 +1,9 @@
+Chapter 12
+
+Exercise 2
+
+Show the declaration for Seven47 which inherits from hte JetPlane class described in exercise 1?
+
+class Seven47 : public JetPlane
+
+

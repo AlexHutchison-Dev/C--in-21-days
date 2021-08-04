@@ -1,0 +1,41 @@
+Chapter 12 Quiz
+
+1) What is downcast?
+
+    Casting Down is the process of typecasting a pointer to base class as a pointer to a derived 
+    class.
+
+2) What does percolating functionality upward mean?
+
+    Percolating upward is process of moving a method that is shared by multiple derived classes to 
+    a common base class inorder for the derived classes to share the functionality. (Can lead to the 
+    base class been treated as a global storage area for many methods.)
+
+3)  If a round rectangle has straight edges and rounded corners, and your RoundRect class inherits
+    both from Rectangle and from Circle, and they in turn bothe inherit from Shape, how many Shapes 
+    are created.
+
+    It depends if virtual inheritance is employed, if so both the circle and the rectangle can share
+    a virtual shape base class meaning only one Shape class is created, otherwise they have one shape
+    class each.
+
+4)  If Horse and Bird inherit from Animal using public virtual Inheritance, do their constructors 
+    intitalize the Animal constructor? If pegasus inherits from both Horse and Bird, how does it 
+    initialize Animals constructor.
+
+    When the keyword virtual is used only the most derived class will call the animal constructor, 
+    in this case pegasus. But if no Pegasus is derived from wither horse or bird then they will call
+    their own Animal constructor
+
+
+5)  Declare a class called Vehicle and make it an abstract class.
+
+    class Vehicle
+    {
+        virtual Move() = 0;
+    }
+
+6)  If a base class is an abstract classm and it has three pure virtual functions, how many of those 
+    functions must be overridden in nits derrived classes?
+
+    None unless you want to  make the class non abstract, in which case all must be overriden.  
