@@ -1,4 +1,4 @@
-// Listing 10.6 - Demiinstrares inline functions and the inclusion of header files,
+// Listing 10.6 - Demonstrates inline functions and the inclusion of header files,
 // be sure to include the header files.
 
 #include "Cat.hpp"
