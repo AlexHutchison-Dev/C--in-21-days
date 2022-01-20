@@ -1,0 +1,24 @@
+Chapter 14 Quiz
+
+1) You hace a base class object pointerpBase. What cast would you use to determine wheter it is a
+CDreived1 or CDerived2 type?
+
+  dynamic_cast
+
+2) You have a const reference to an object and tried calling a public member function, written by
+you. The compiler does not allow this because the function in question is not a const member. Would
+you update funcrtion or use the const_cast?
+
+  As this is a function I have written I would correct the function definition, if this was some
+function in a library then i would use const_cast.
+
+3) reinterpret_cast should be used only when static_cast does not work ans the cast is known to be
+required and safe, True or False?
+
+  True. As this breaks the type safety and could lead to unforseen behavior or fatal errors.
+
+4) Is it true that many instances of static_cast based conversions, especially between simple
+sate-types would be pergpemed automatically by a good C++ compiler?
+
+  Yes, in the vast majority of cases a standard Ctype cast is enough instruction for the compiler and
+  in my opinion is far cleaner and easier to read.
