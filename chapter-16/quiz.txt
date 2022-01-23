@@ -1,0 +1,28 @@
+Chapter 16 Quiz
+
+1) What would be your choice of container that ahas to contain an array of objects with insertion
+possible at the top and the bottom?
+
+  std::deque
+
+2) You need to sore elements for quick lookup, What container would you use?
+
+  std::map
+
+3) You need to store elements in a std::set but still have the storage and lookup criteria altered,
+based on conditions that are not necessarily the value of the elements. Is this possible?
+
+  No -- Correction
+
+  Yes, When you instantiate an std::set template you may optionally supply a seccond template
+  paramater that is a binary predicate that the set class uses as the sort criterion.
+
+4) What part of the STL helps connect algorithms to the constainers so that the algorithms can work
+on the elememnts within?
+
+  iterators
+
+5) Would you choose to use container hash_set in an application that needs to be ported to different
+platforms and build using different C++ compilers?
+  
+  No you may experience compatability problems.
