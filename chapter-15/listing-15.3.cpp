@@ -1,6 +1,8 @@
 // Listing 15.3 - Demonstrates usage of template class defined in listing 15.3
 
-template <typename T1 = int, typename T2 = double> class CHoldsPair {
+template <typename T1 = int, typename T2 = double>
+
+class CHoldsPair {
 private:
   T1 m_value1;
   T2 m_value2;

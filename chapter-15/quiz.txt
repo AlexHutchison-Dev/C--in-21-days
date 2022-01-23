@@ -1,0 +1,38 @@
+Chapter 15 quiz
+
+1) What is an inclusion guard?
+
+  An inclusion guard is an instruction to the preprocessor not reimport the definiton from a header
+file if it has already been included.
+
+2) What is the defference between #define debug 0 and #undef debug?
+
+  #define debug would create a substitution that replaced the word debug with 0 and the #undef debug
+would cause the preprocessor to ingnore any furter instances of the debug indentifier. When using
+undef you only need the identifier and not the argument list if it is a macro.
+
+3) Consider the following macro: 
+        #define HALVE(x) x / 2
+    What is the result if this is called with x = 4?
+
+  2
+
+4) What is the resultif the HALVE macrto from question 3 is called with 10 + 10 as the argument?
+
+  15
+
+5) How would you modify the macro to avoid the eronius result?
+
+  Put the x in parentheses, so (x) / 2.
+
+6) What is the difference between a template and a Macro?
+
+  A macro is a simple text replacement by the preprocessor, replacing the identifier with the
+  expression, in a simailar way to a constant. A template is a pattern that you can apply to objects of varying types, templates are
+  type safe and evaluated by the compiler.
+
+7) What is the difference between the paramater in the template and the parameter in a not template
+function.
+
+  THe parameter in the template does not have to be of a specific type, where as the function
+  parameter does.
