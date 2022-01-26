@@ -1,0 +1,13 @@
+Chapter 17 Quiz
+
+1) What STL template does the std::string specialize?
+  std::basic_string
+
+2) If you were to perform a case insensitive comparison of two strings, how would you do it?
+
+  You could converto both strings to all lower, then run a comparison, with the = operator.
+
+3) Are the STL string and a C-style string similar?
+  No, a C-style tring is a basic array of type char, the std::string is an template that has
+  additional functioanality as well as data storage.
+
