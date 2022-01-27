@@ -1,0 +1,26 @@
+Chapter 18 Quiz
+
+1) Can elements be inserted at the begiging or midlle of a vector in constant time.
+
+  No. THey can be inserted anywhere but only at the end in constant time.
+
+2) My vector returns a  size() of 10 and capacity as 20, how many more elements may I insert before
+it needs memory realocation?
+
+  10, when size is equal to capacity, realocation will be required to add any new elements.
+
+3) What does the pop_back function do?
+  po_back() removes an element from the end of a vector or deque.
+
+4)  If vector <int> is a dynamic array of integers a vector <CMammal> is a dynamic array of what?
+
+  Its an array of CMammal objects.
+
+5) Can elements of a vector be randomly accessed, if so how?
+
+  Yes. There are 2 ways, subscript opperator i.e [index] and using the vectorName.at(index) function.
+
+6) What iterator type allows random access of elements in a vector?
+  The random_access itetator.
+
+
