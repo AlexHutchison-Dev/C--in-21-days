@@ -6,8 +6,7 @@
 
 using namespace std;
 
-enum MenuOptions
-{
+enum MenuOptions {
   InsertContactListEntry = 1,
   SortOnName = 2,
   SortOnNumber = 3,
@@ -16,25 +15,21 @@ enum MenuOptions
   QuitContactList = 6,
 };
 
-struct ContactListItem
-{
+struct ContactListItem {
   string strContactName;
   string strPhoneNumber;
 
   // Constructor and Destructor
-  ContactListItem(const string &strName, const string &strNumber)
-  {
+  ContactListItem(const string &strName, const string &strNumber) {
     strContactName = strName;
     strPhoneNumber = strNumber;
   }
 
-  bool operator==(const ContactListItem &itemToCompare) const
-  {
+  bool operator==(const ContactListItem &itemToCompare) const {
     return (itemToCompare.strContactName == this->strContactName);
   }
 
-  bool operator<(const ContactListItem &itemToCompare) const
-  {
+  bool operator<(const ContactListItem &itemToCompare) const {
     return (this->strContactName < itemToCompare.strContactName);
   }
 };
@@ -46,20 +41,16 @@ void EraseEntryFromList(list<ContactListItem> &listContacts);
 bool Predicate_CheckItemsOnNumber(const ContactListItem &item1,
                                   const ContactListItem &item2);
 
-int main()
-{
+int main() {
   list<ContactListItem> listContacts;
   int nUserSelection = 7;
 
-  while ((nUserSelection != (int)QuitContactList))
-  {
+  while ((nUserSelection != (int)QuitContactList)) {
     ShowMenu(&nUserSelection);
-    switch (nUserSelection)
-    {
+    switch (nUserSelection) {
     case InsertContactListEntry:
       listContacts.push_back(GetContactInfo());
-      cout << "Contacts list updated!" << endl
-           << endl;
+      cout << "Contacts list updated!" << endl << endl;
       nUserSelection = 7;
       break;
 
@@ -92,7 +83,7 @@ int main()
 
     default:
       cout << "Invalid Input " << nUserSelection << ".";
-      cout << "Choose an Otion between 1 and 5." << endl;
+      cout << "Choose an Option between 1 and 5." << endl;
       nUserSelection = 7;
       break;
 
@@ -103,10 +94,8 @@ int main()
   }
 }
 
-void ShowMenu(int *selection)
-{
-  cout << "What would you like to do next? ***" << endl
-       << endl;
+void ShowMenu(int *selection) {
+  cout << "What would you like to do next? ***" << endl << endl;
   cout << "Enter 1 to add a contact name and number" << endl;
   cout << "Enter 2 to sort the list by name" << endl;
   cout << "Enter 3 to sorth the list by number" << endl;
@@ -122,15 +111,12 @@ void ShowMenu(int *selection)
 }
 
 bool Predicate_CheckItemsOnNumber(const ContactListItem &item1,
-                                  const ContactListItem &item2)
-{
+                                  const ContactListItem &item2) {
   return (item1.strPhoneNumber < item2.strPhoneNumber);
 }
 
-ContactListItem GetContactInfo()
-{
-  cout << "*** Enter contact information ***" << endl
-       << endl;
+ContactListItem GetContactInfo() {
+  cout << "*** Enter contact information ***" << endl << endl;
 
   string strName;
   cout << "Please enter the contact name" << endl;
@@ -146,31 +132,24 @@ ContactListItem GetContactInfo()
   return ContactListItem(strName, strPhoneNumber);
 }
 
-void DisplayContactList(const list<ContactListItem> &listContacts)
-{
-  cout << "*** Displaying Contact List ***" << endl
-       << endl;
+void DisplayContactList(const list<ContactListItem> &listContacts) {
+  cout << "*** Displaying Contact List ***" << endl << endl;
   cout << "There are " << listContacts.size();
-  cout << " entries in the contact list." << endl
-       << endl;
+  cout << " entries in the contact list." << endl << endl;
 
   list<ContactListItem>::const_iterator iContact;
   for (iContact = listContacts.begin(); iContact != listContacts.end();
-       ++iContact)
-  {
+       ++iContact) {
     cout << "Name: " << iContact->strContactName << "\t";
     cout << "Phone Number: " << iContact->strPhoneNumber;
     cout << endl;
   }
 
-  cout << endl
-       << endl;
+  cout << endl << endl;
 }
 
-void EraseEntryFromList(list<ContactListItem> &listContacts)
-{
-  cout << "*** Erase an entry ***" << endl
-       << endl;
+void EraseEntryFromList(list<ContactListItem> &listContacts) {
+  cout << "*** Erase an entry ***" << endl << endl;
   cout << "Enter the name of the contact you wish to delete" << endl;
   cout << "> ";
 
