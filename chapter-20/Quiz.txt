@@ -1,0 +1,13 @@
+Chapter 20 Quiz
+
+1) You declaare a set of integers as set <int>. What function suppplies the sort criteria.
+  
+  By default it is std::less, you can however specify std::greater like this: set <int,
+  std::greater>
+
+2) Where would you fimd duplicate elements in a multiset?
+  They would all be grouped togeather as the elements are sorted on insertion.
+
+3) What set or multiset function supplies the number of elements in the container.
+  
+  size()
